@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #192124;
+  --secondary-color: #bde6fa;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  letter-spacing: 0.5px;
+  color: var(--primary-color);
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+/* ELEMENTS */
+
+.content-wrapper {
+  background-color: var(--secondary-color);
+  width: 100%;
+  max-width: 30rem;
+  max-height: 100%;
+  padding: 2rem;
+}
+
+@media (max-width: 400px) {
+  .content-wrapper {
+    padding: 1rem;
+  }
+}
+
+.main-header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.task-list {
+  overflow: scroll;
+  max-height: 60vh;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.list-item {
+  line-height: 1.8;
+}
+
+.list-item-menu {
+  display: none;
+  margin-left: 1rem;
+  opacity: 0.5; /* for lighter menu icons */
+}
+
+.list-item:hover .list-item-menu {
+  display: inline-block;
+}
+
+.new-item-container {
+  margin-top: 0.5rem;
+  /* background-color: white;
+  border: .1rem solid; */
+}
+
+.new-item-input {
+  outline: none;
+  padding: 0.5rem;
+  padding-right: 0;
+  font-size: 1.2rem;
+  width: calc(100% - 2.8rem);
+  height: 2.5rem;
+}
+
+.new-item-button {
+  position: relative;
+  top: .15rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  width: 2.8rem;
+  height: 2.5rem;
+  border: none;
+  cursor: pointer;
+}
