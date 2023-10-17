@@ -50,7 +50,6 @@ body {
 .task-list-container {
   overflow: scroll;
   max-height: 60vh;
-  /* padding-left: 1.5rem; */
   font-size: 1.2rem;
 }
 
@@ -60,16 +59,6 @@ body {
 
 .list-item {
   line-height: 1.8;
-}
-
-.list-item-menu {
-  display: none;
-  margin-left: 1rem;
-  opacity: 0.5; /* for lighter menu icons */
-}
-
-.list-item:hover .list-item-menu {
-  display: inline-block;
 }
 
 .new-item-container {
@@ -102,10 +91,8 @@ body {
 
 /* Customize the label (the container) */
 .checkbox-label {
-  display: block;
   position: relative;
   padding-left: 35px;
-  margin-right: 20px;
   margin-bottom: 0;
   cursor: pointer;
   -webkit-user-select: none;
